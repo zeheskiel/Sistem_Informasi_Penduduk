@@ -6,13 +6,14 @@
     <script src="<?php echo base_url().'assets/js/login.js'?>"  type="text/javascript"></script>
   <!------ Include the above in your HEAD tag ---------->
 
-<div class="wrapper fadeInDown">
+<div class="wrapper fadeInDown" style="background-color: rgba(0, 142, 214, 0.2);">
   <div id="formContent">
     <!-- Tabs Titles -->
 
     <!-- Icon -->
     <div class="fadeIn first">
-    <h2> <b>SISTEM INFORMASI PENDUDUK </b></h2>
+    <h3> <b style="color:#008ED6;">SISTEM INFORMASI PENDUDUK </b></h3><br/>
+      <h4> <b style="color:#E07416;"> SIGN UP </b></h4>
       <!-- <img src="<?php echo base_url().'assets/images/carikodepos.png'?>" style="padding: 10px;" id="icon" alt="User Icon" /> -->
     </div>
 
@@ -24,7 +25,7 @@
       <input type="checkbox" onclick="myFunction()" style="position: absolute; left: 45px; ">  <p style="position: absolute; left: 65px; ">Show Password</p>
       
 
-      </br>
+      </br></br>
       <span style="margin-left:0px;">Captcha : 
         <?php echo $cap_img;?>
       </span> 
@@ -33,7 +34,7 @@
     </br>
     </br>
 
-      </br></br>
+      
       <input type="submit" class="fadeIn fourth" style="background-color: blue;"  value="Sign Up">
     </form>
 
@@ -45,4 +46,3 @@
   </div>
 </div>
 
-<!-- <?php echo base_url();?> -->

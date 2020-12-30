@@ -50,7 +50,7 @@ th{
     <div id="header" style="background-color:#0060A2;color:#ffffff;">
 
         <a href="penduduk" style="color:#E1E1E1;text-decoration:none"><span class="glyphicon glyphicon-folder-open"></span> Sistem Informasi Penduduk</a>
-      <p style="position: absolute; right: 45px; top:25px; font-size:15px;" > <a onclick="return confirm('Apakah Anda Yakin Ingin Keluar?');" href="<?php echo base_url();?>index.php/penduduk/logout" style="color:white;"> LOGOUT </a></p>
+      <p style="position: absolute; right: 45px; top:25px; font-size:15px;" > <a onclick="return confirm('Apakah Anda Yakin Ingin Keluar?');" href="<?php echo base_url();?>penduduk/logout" style="color:white;"> LOGOUT </a></p>
     </div>
 
     <div class="container">
@@ -83,37 +83,37 @@ th{
   ?>
   <form class="form-horizontal" action="<?php echo $url;?>" method="POST">
     <div class="form-group">
-      <label class="control-label col-sm-2" for="email">NIK </label>
+      <label class="control-label col-sm-2" for="email" >NIK </label>
       <div class="col-sm-6">
-        <input required type="text" class="form-control" id="nik" placeholder="Masukkan NIK" value="<?php if($cek){echo $showData['nik'];} ?>" name="nik">
+        <input required type="text" maxlength="11" minlength="11" class="form-control" id="nik" placeholder="Masukkan NIK" value="<?php if($cek){echo $showData['nik'];} ?>" name="nik">
       </div>
     </div>
 
     <div class="form-group">
       <label class="control-label col-sm-2" for="pwd">Nama </label>
       <div class="col-sm-6">          
-        <input required type="text" class="form-control" id="nama" placeholder="Masukkan Nama" value="<?php if($cek){echo $showData['nama'];} ?>" name="nama">
+        <input required type="text" minlength="3" class="form-control" id="nama" placeholder="Masukkan Nama" value="<?php if($cek){echo $showData['nama'];} ?>" name="nama">
       </div>
     </div>
 
     <div class="form-group">
       <label class="control-label col-sm-2" for="pwd">Kabupaten </label>
       <div class="col-sm-6">          
-        <input required type="text" class="form-control" id="kabupaten" placeholder="Masukkan Kabuoaten" value="<?php if($cek){echo $showData['kabupaten'];}?>" name="kabupaten">
+        <input required type="text" minlength="3" minlength="3" class="form-control" id="kabupaten" placeholder="Masukkan Kabuoaten" value="<?php if($cek){echo $showData['kabupaten'];}?>" name="kabupaten">
       </div>
     </div>
 
     <div class="form-group">
       <label class="control-label col-sm-2" for="pwd">Provinsi </label>
       <div class="col-sm-6">          
-        <input required type="text" class="form-control" id="provinsi" placeholder="Masukkan Provinsi" value="<?php if($cek){echo $showData['provinsi'];}?>" name="provinsi">
+        <input required type="text" minlength="3" class="form-control" id="provinsi" placeholder="Masukkan Provinsi" value="<?php if($cek){echo $showData['provinsi'];}?>" name="provinsi">
       </div>
     </div>
 
     <div class="form-group">
       <label class="control-label col-sm-2" for="pwd">Tempat Lahir </label>
       <div class="col-sm-6">          
-        <input required type="text" class="form-control" id="tmp_lahir" placeholder="Masukkan Tempat Lahir password" value="<?php if($cek){echo $showData['tmp_lahir'];} ?>" name="tmp_lahir">
+        <input required type="text" minlength="3" class="form-control" id="tmp_lahir" placeholder="Masukkan Tempat Lahir password" value="<?php if($cek){echo $showData['tmp_lahir'];} ?>" name="tmp_lahir">
       </div>
     </div>
 
@@ -172,7 +172,7 @@ th{
     <div class="form-group">
       <label class="control-label col-sm-2" for="pwd">Pekerjaan </label>
       <div class="col-sm-6">          
-        <input required type="text" class="form-control" id="pwd" placeholder="Masukkan Pekerjaan" value="<?php if($cek){echo $showData['pekerjaan'];}?>" name="pekerjaan">
+        <input required type="text" minlength="3" class="form-control" id="pwd" placeholder="Masukkan Pekerjaan" value="<?php if($cek){echo $showData['pekerjaan'];}?>" name="pekerjaan">
       </div>
     </div>
 

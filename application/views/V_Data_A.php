@@ -50,7 +50,7 @@ th{
     <div id="header" style="background-color:#0060A2;color:#ffffff;height:9%;">
 
         <a href="penduduk" style="color:#E1E1E1;text-decoration:none"><span class="glyphicon glyphicon-folder-open"></span> Sistem Informasi Penduduk (ADMIN)</a>
-      <p style="position: absolute; right: 45px; top:25px; font-size:15px;" > <a onclick="return confirm('Apakah Anda Yakin Ingin Keluar?');" href="<?php echo base_url();?>index.php/penduduk/logout" style="color:white;"> LOGOUT </a></p>
+      <p style="position: absolute; right: 45px; top:25px; font-size:15px;" > <a onclick="return confirm('Apakah Anda Yakin Ingin Keluar?');" href="<?php echo base_url();?>penduduk/logout" style="color:white;"> LOGOUT </a></p>
     </div>
 
     <div class="container" style="height:85%;">
@@ -152,7 +152,7 @@ th{
   </div>
 
 
-    
+        
           
 
 
